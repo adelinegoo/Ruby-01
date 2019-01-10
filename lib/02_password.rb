@@ -1,31 +1,23 @@
 #!demandant à l'utilisateur de définir un mot de passe
-def ask_signup
+def signup
   puts " Merci d'entrer votre mot de passe."
-  print "> "
-  signup = gets.chomp
-return
+  key = gets.chomp
+return key
 end
 
 
 #!demandant à l'utilisateur de rentrer son mot de passe jusqu'à ce qu'il corresponde à celui défini précédemment
-def ask_login(asignup)
-  login = ask_signup
-  login = nil
+def login(key)
+  askkey = nil
   puts "Merci d'ecrire votre mot de passe."
-  print "> "
-  system 'stty -echo'
-  login = $stdin.gets.chomp
-    system 'stty -echo'
-   
-  if login == signup
-    puts "youpi"
-  
-  else
-    puts "Mot de passe errone"
-    
-  end
+       while askkey != key
+              puts "Merci d'ecrire votre mot de passe."
+              askkey == gets.chomp
+              if key == askkey
+                     return nil
+              end
+       end
 end
-
 
 #!affichant un écran de bienvenue avec des informations top secrètes de la NSA
 def welcome_screen
@@ -33,6 +25,9 @@ def welcome_screen
 end
 
 def perform
+  askkey = signup
+  login(key)
+  welcome_screen 
 end
 
 perform
