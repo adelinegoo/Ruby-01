@@ -6,6 +6,12 @@ def half_pyramid
   n.times do
       n -=1
       m +=1
+      if n == 0
+        puts (" " * n) + ("#" * m)
+
+      else
+        puts  “Ecris un nombre impair!”
+      end 
       puts (" " * n) + ("#" * m)
     end
 end
