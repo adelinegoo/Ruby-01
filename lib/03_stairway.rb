@@ -1,6 +1,6 @@
 #!Stairway
 def dice
-	dice = rend(1..6)
+	dice = rand(1..6)
 	return
 	end
 
