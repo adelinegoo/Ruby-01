@@ -1,7 +1,7 @@
 #!Stairway
 def dice
 	dice = rand(1..6)
-	return
+	return dice
 	end
 
 def game
