@@ -1,0 +1,29 @@
+Hashes, Oh Lovely Hashes
+
+Array stores data like a list, you can only use numbers to get the data.
+You can use numbers to "index" into a array, meaning you can use numbers to find out what's in arrays. 
+
+Hash store data just like a list, you can use numbers and string to get the data . This lets you treat a hash like it's a database for storing and organizing data.
+
+?> things = ['a', 'b', 'c', 'd']
+=> ["a", "b", "c", "d"]
+>> puts things[1]
+b
+=> nil
+>> things[1] = 'z'
+=> "z"
+>> puts things[1]
+z
+=> nil
+>> things
+=> ["a", "z", "c", "d"]
+
+Delete function 
+?> stuff.delete('city')
+=> "San Francisco"
+>> stuff.delete(1)
+=> "Wow"
+>> stuff.delete(2)
+=> "Neato"
+>> stuff
+=> {"name"=>"Zed", "age"=>39, "height"=>74}
