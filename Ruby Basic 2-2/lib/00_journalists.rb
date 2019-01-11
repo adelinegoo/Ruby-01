@@ -10,15 +10,21 @@
 
 # Il y a X journalistes avec un numero.
     puts "Il y a X journalistes avec un numero."
+    print ">"
+	  puts db_user {|x| x =~ /\d/i}
 
 # Il y a X  "Aude" (sans prendre en compte les majuscules)
-    db_user.sort puts "Il y a X  "Aude"
+    puts "Voici la réponse à la question 3:"
+	  print ">"
+	  puts db_user {|x| x =~ /Aude/i}
 
 # Il y a X compte Twitter qui commencent par une majuscule première lettre juste après le @)
     puts "Il y a X compte Twitter qui commencent par une majuscule première lettre juste après le @)"
 
 # Il y a X compte Twitter qui contienne une majuscule.
     puts "Il y a X compte Twitter qui contienne une majuscule."
+    print ">"
+	  puts db_user {|x| x =~ /[A-Z]/i}
 
 # Il y a X underscore _ sur les comptes Twitter.
   puts "Il y a X underscore _ sur les comptes Twitter."
