@@ -11,7 +11,7 @@ def game
 	    puts "tu montes d'#{dice} marche."
 	
 #! S’il fait 1, il descend d'une marche et le programme le lui dit 
-  elseif 
+  elsif 
 	   dice == 1
 	   marche -= 1
 	   puts "tu descends d'#{dice} marche."
